@@ -1,0 +1,35 @@
+.carousel {
+    font-size: 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+
+    &__inner {
+        height: 350px;
+        white-space: nowrap ;
+        overflow: hidden;
+    }
+
+    &__image {
+        height: 100%;
+    }
+
+    &__controls {
+        list-style-type: none;
+        margin: 65px auto 80px;
+        width: 150px;
+        padding: 0;
+    }
+
+    &__controls-point {
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        border: 6px solid #ccc;
+        border-radius: 20px;
+        margin-right: 10px;
+        &_active {
+            border: 6px solid #FA581A;
+        }
+    }
+}
