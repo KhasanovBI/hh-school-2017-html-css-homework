@@ -1,0 +1,123 @@
+.input-mixin {
+    color: #999999;
+    background-color: #212121;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    background-color: #222222;
+    color: #999;
+    padding-top: 70px;
+
+    &__divider {
+        margin-top: 8px;
+        border-bottom: 1px solid #4d4c4b;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 28px;
+        text-transform: uppercase;
+        color: #eeeeee;
+    }
+
+    &__text-body {
+        margin-bottom: 25px;
+        line-height: 2;
+    }
+
+    &__form {
+        &-text-wrapper {
+            padding-left: 0;
+        }
+
+        &-text {
+            .input-mixin;
+            border-bottom: 1px solid #4d4c4b;
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+            }
+
+            &:focus {
+                border-bottom: 1px solid #fff;
+                outline: none;
+            }
+
+            &::-moz-placeholder {
+                text-transform: uppercase;
+            }
+
+            &::-webkit-input-placeholder {
+                text-transform: uppercase;
+            }
+        }
+
+        &-submit {
+            .input-mixin;
+            padding: 0;
+            margin: 70px 0 0;
+            text-align: left;
+        }
+    }
+
+    &__link-column {
+        padding: 0;
+        color: #999;
+        list-style-type: none;
+
+        &-header {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            color: #eeeeee;
+        }
+
+        &-item {
+            color: #999;
+            display: block;
+            line-height: 1.7;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.duty-info {
+    padding: 30px 0 25px;
+
+    &__text {
+        margin-bottom: 4px;
+    }
+
+    &__links {
+        margin-top: 9px;
+        text-align: right;
+    }
+
+    &__link-wrapper {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    &__link {
+        color: #999;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
